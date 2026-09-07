@@ -16,8 +16,8 @@ type Project = {
 };
 
 const collageFrames: Record<string, string[]> = {
-  'bird-retirement': ['display-01.png', 'display-02.png', 'display-03.png'],
-  'shehong-city': ['display-01.png', 'display-02.png', 'display-03.png'],
+  'bird-retirement': ['01.webp', '02.webp', '03.webp'],
+  'shehong-city': ['01.webp', '02.webp', '03.webp'],
   'ronghua-city': ['display-01.png', 'display-02.png', 'display-03.png'],
   'shehong-food': ['01.png'],
 };
