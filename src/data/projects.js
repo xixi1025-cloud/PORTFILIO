@@ -34,7 +34,7 @@ export const projects = [
     tags: ['公众号运营', '内容编辑', '图文排版', '内容策划'],
     image: 'bird-retirement.webp',
     imageAvailable: true,
-    url: 'https://v.xiumi.us/board/v5/6DiP1/518634869',
+    url: '',
     cta: 'VIEW FULL ARTICLE ↗',
   },
   {
