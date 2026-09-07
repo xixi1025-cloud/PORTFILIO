@@ -378,7 +378,7 @@ export function CopywritingSpread({ project }: { project: Project }) {
           ))}
         </ul>
         {articleHref && (
-          <Link
+          <a
             className="copywriting-cta copywriting-cta--desktop"
             href={articleHref}
             target={articleExternal ? '_blank' : undefined}
@@ -386,14 +386,14 @@ export function CopywritingSpread({ project }: { project: Project }) {
           >
             <span>{project.id === 'kaoyan-story' ? 'VIEW FULL ARTICLE' : 'READ ORIGINAL'}</span>
             <i aria-hidden="true">↗</i>
-          </Link>
+          </a>
         )}
       </Reveal>
       <Reveal className="copywriting-reader" delay={0.08}>
         <OriginalDocument project={project} />
       </Reveal>
       {articleHref && (
-        <Link
+        <a
           className="copywriting-cta copywriting-cta--mobile"
           href={articleHref}
           target={articleExternal ? '_blank' : undefined}
@@ -401,7 +401,7 @@ export function CopywritingSpread({ project }: { project: Project }) {
         >
           <span>{project.id === 'kaoyan-story' ? 'VIEW FULL ARTICLE' : 'READ ORIGINAL'}</span>
           <i aria-hidden="true">↗</i>
-        </Link>
+        </a>
       )}
     </div>
   );
