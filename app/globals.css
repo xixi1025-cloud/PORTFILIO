@@ -6716,7 +6716,7 @@ body {
 }
 
 @media (max-width: 560px) {
-  .editorial-collage { grid-template-columns: 1fr; }
+  .editorial-collage { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .editorial-collage-panel:nth-child(3) { margin-top: 0; }
   .editorial-collage-panel:nth-child(4) { grid-column: 1; margin-top: 0; }
   .portfolio-editorial .editorial-collage-panel img,
