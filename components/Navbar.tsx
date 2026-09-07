@@ -1,13 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
 import { profile } from '../src/data/profile';
 
-export function Navbar() {
+export function Navbar({ home = false }: { home?: boolean }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const pathname = usePathname();
-  const sectionHref = (href: string) => (pathname === '/' ? href : `/${href}`);
+  const sectionHref = (href: string) => (home ? href : `../../${href}`);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
@@ -24,7 +22,7 @@ export function Navbar() {
     <header className={`site-nav ${scrolled ? 'is-scrolled' : ''}`}>
       <a
         className="wordmark"
-        href={pathname === '/' ? '#top' : '/'}
+        href={home ? '#top' : '../../'}
         onClick={() => setOpen(false)}
       >
         {profile.englishName}
